@@ -86,7 +86,7 @@ ngBabbage.directive('babbageChart', ['$rootScope', '$http', function($rootScope,
       };
 
       var queryResult = function(data, q, model, state, category, grouping, value) {
-        var wrapper = element.querySelectorAll('.chart-babbage')[0],
+        var wrapper = element.find('.chart-babbage')[0],
             size = babbageCtrl.size(wrapper, function(w) {
               return w * 0.6;
             }),

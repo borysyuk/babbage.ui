@@ -51,7 +51,7 @@ ngBabbage.directive('babbageSankey', ['$rootScope', '$http', '$document', functi
       var dfd = $http.get(babbageCtrl.getApiUrl('aggregate'),
                           babbageCtrl.queryParams(q));
 
-      var wrapper = element.querySelectorAll('.sankey-babbage')[0],
+      var wrapper = element.find('.sankey-babbage')[0],
           size = babbageCtrl.size(wrapper, function(w) { return w * 0.6; });
 
       unit = Math.max(400, size.height) / 20;
